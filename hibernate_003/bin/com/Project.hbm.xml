@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.Project" table="project">
+        <id name="proid"  column="proifd" type="int" >
+        
+        <!-- assigned表示手工赋值 -->
+            <generator class="assigned" />
+           <!--  <generator class="native" /> -->
+        </id>
+        <property name="proname" type="java.lang.String">
+           <column name="proname" length="20" not-null="true" />           
+        </property>
+      
+       <!--  配置多对多关联关系 -->
+   <set name="employees" table="proemp" cascade="all">
+       <key column="rproid"></key>
+       <many-to-many  class="com.Employee"  column="rempid"></many-to-many> 
+   </set>
+        
+    
+    </class>
+</hibernate-mapping>
