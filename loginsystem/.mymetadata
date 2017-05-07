@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="imooc"
+  id="myeclipse.1490343634493"
+  context-root="/imooc"
+  j2ee-spec="5.0"
+  archive="imooc.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+
