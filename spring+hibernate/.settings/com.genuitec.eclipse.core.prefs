@@ -1,0 +1,4 @@
+#Sun May 07 22:57:21 CST 2017
+eclipse.preferences.version=1
+validator.Checked=WebContent/WEB-INF/views,WebContent/index.jsp,WebContent/frame/right.jsp
+validator.Unchecked=
